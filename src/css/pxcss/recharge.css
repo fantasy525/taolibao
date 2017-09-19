@@ -1,0 +1,140 @@
+body {
+  background-color: #dee0eb;
+}
+
+.header {
+  background-color: #271c4c;
+}
+
+.head-left {
+  display: inline-block;
+  width: 41px;
+  height: 34px;
+}
+
+.header .head-left {
+  background-image: url("../images/back.png");
+  background-size: 100% 100%;
+}
+
+.main {
+  padding-bottom: 160px;
+}
+
+.balance {
+  background-color: #322865;
+  padding-bottom: 30px;
+}
+
+.bal-title {
+  font-size: 22px;
+  /*px*/
+  color: #847fa5;
+  padding-left: 24px;
+  font-weight: 600;
+  padding-top: 29px;
+}
+
+.bal-value {
+  height: 116px;
+  font-size: 60px;
+  /*px*/
+  color: #fcd014;
+  line-height: 116px;
+  border-bottom: 1px solid #4f4a80;
+  /*no*/
+  padding-left: 13px;
+}
+
+.bal-val__decimal {
+  font-size: 50px;
+  /*px*/
+}
+
+.bal-val__unit {
+  font-size: 50px;
+  /*px*/
+}
+
+.charge-url {
+  margin-top: 30px;
+}
+
+#url {
+  width: 550px;
+  background-color: #322865;
+  font-size: 22px;
+  /*px*/
+  color: #fff;
+  height: 45px;
+  line-height: 45px;
+}
+
+.copy {
+  width: 90px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fcd014;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.msg-item {
+  padding: 30px 0 32px 24px;
+  border-bottom: 1px solid #dee0eb;
+  /*no*/
+}
+
+.msg .msg-item:last-child {
+  border-bottom: none;
+}
+
+.msg-item .msg-title {
+  font-size: 22px;
+  /*px*/
+  color: #6d698e;
+  font-weight: 600;
+}
+
+.msg-detail {
+  margin-top: 24px;
+}
+
+.msg-detail p {
+  font-size: 22px;
+  /*px*/
+  color: #7c83a1;
+  line-height: 36px;
+}
+
+.contact {
+  padding: 43px 26px;
+}
+
+.contact a {
+  font-size: 28px;
+  /*px*/
+  color: #322865;
+}
+
+.contact a span {
+  display: inline-block;
+  width: 500px;
+  vertical-align: middle
+}
+
+.weixin {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.next-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 35px;
+  background: url("../images/next-btn.png") center center no-repeat;
+  background-size: 19px 35px;
+  -webkit-background-size: 19px 35px;
+}

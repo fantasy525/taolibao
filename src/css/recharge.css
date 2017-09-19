@@ -1,0 +1,212 @@
+body {
+  background-color: #dee0eb;
+}
+
+.header {
+  background-color: #271c4c;
+}
+
+.head-left {
+  display: inline-block;
+  width: 0.546667rem;
+  height: 0.453333rem;
+}
+
+.header .head-left {
+  background-image: url("../images/back.png");
+  background-size: 100% 100%;
+}
+
+.main {
+  padding-bottom: 2.133333rem;
+}
+
+.balance {
+  background-color: #322865;
+  padding-bottom: 0.4rem;
+}
+
+.bal-title {
+  color: #847fa5;
+  padding-left: 0.32rem;
+  font-weight: 600;
+  padding-top: 0.386667rem;
+}
+
+[data-dpr="1"] .bal-title {
+  font-size: 11px;
+}
+
+[data-dpr="2"] .bal-title {
+  font-size: 22px;
+}
+
+[data-dpr="3"] .bal-title {
+  font-size: 33px;
+}
+
+.bal-value {
+  height: 1.546667rem;
+  color: #fcd014;
+  line-height: 1.546667rem;
+  border-bottom: 1px solid #4f4a80;
+  padding-left: 0.173333rem;
+}
+
+[data-dpr="1"] .bal-value {
+  font-size: 30px;
+}
+
+[data-dpr="2"] .bal-value {
+  font-size: 60px;
+}
+
+[data-dpr="3"] .bal-value {
+  font-size: 90px;
+}
+
+[data-dpr="1"] .bal-val__decimal {
+  font-size: 25px;
+}
+
+[data-dpr="2"] .bal-val__decimal {
+  font-size: 50px;
+}
+
+[data-dpr="3"] .bal-val__decimal {
+  font-size: 75px;
+}
+
+[data-dpr="1"] .bal-val__unit {
+  font-size: 25px;
+}
+
+[data-dpr="2"] .bal-val__unit {
+  font-size: 50px;
+}
+
+[data-dpr="3"] .bal-val__unit {
+  font-size: 75px;
+}
+
+.charge-url {
+  margin-top: 0.4rem;
+}
+
+#url {
+  width: 7.333333rem;
+  background-color: #322865;
+  color: #fff;
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+
+[data-dpr="1"] #url {
+  font-size: 11px;
+}
+
+[data-dpr="2"] #url {
+  font-size: 22px;
+}
+
+[data-dpr="3"] #url {
+  font-size: 33px;
+}
+
+.copy {
+  width: 1.2rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  background-color: #fcd014;
+  -webkit-border-radius: 0.053333rem;
+  border-radius: 0.053333rem;
+}
+
+.msg-item {
+  padding: 0.4rem 0 0.426667rem 0.32rem;
+  border-bottom: 1px solid #dee0eb;
+}
+
+.msg .msg-item:last-child {
+  border-bottom: none;
+}
+
+.msg-item .msg-title {
+  color: #6d698e;
+  font-weight: 600;
+}
+
+[data-dpr="1"] .msg-item .msg-title {
+  font-size: 11px;
+}
+
+[data-dpr="2"] .msg-item .msg-title {
+  font-size: 22px;
+}
+
+[data-dpr="3"] .msg-item .msg-title {
+  font-size: 33px;
+}
+
+.msg-detail {
+  margin-top: 0.32rem;
+}
+
+.msg-detail p {
+  color: #7c83a1;
+  line-height: 0.48rem;
+}
+
+[data-dpr="1"] .msg-detail p {
+  font-size: 11px;
+}
+
+[data-dpr="2"] .msg-detail p {
+  font-size: 22px;
+}
+
+[data-dpr="3"] .msg-detail p {
+  font-size: 33px;
+}
+
+.contact {
+  padding: 0.573333rem 0.346667rem;
+}
+
+.contact a {
+  color: #322865;
+}
+
+[data-dpr="1"] .contact a {
+  font-size: 14px;
+}
+
+[data-dpr="2"] .contact a {
+  font-size: 28px;
+}
+
+[data-dpr="3"] .contact a {
+  font-size: 42px;
+}
+
+.contact a span {
+  display: inline-block;
+  width: 6.666667rem;
+  vertical-align: middle;
+}
+
+.weixin {
+  vertical-align: middle;
+  margin-right: 0.266667rem;
+}
+
+.next-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.253333rem;
+  height: 0.466667rem;
+  background: url("../images/next-btn.png") center center no-repeat;
+  background-size: 0.253333rem 0.466667rem;
+  -webkit-background-size: 0.253333rem 0.466667rem;
+}

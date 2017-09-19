@@ -1,0 +1,135 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-justify {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-justify-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-justify-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-align {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+}
+
+.flex-align-content {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-dir-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.vertical-middle:after {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.header {
+  height: 1.466667rem;
+  padding-left: 0.373333rem;
+}
+
+.header a {
+  display: inline-block;
+}
+
+.header .head-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  text-align: center;
+  color: #fff;
+  font-size: 0.48rem;
+  padding-right: 0.546667rem;
+}
+
+.header .person {
+  width: 0.48rem;
+  height: 0.533333rem;
+}
+
+.backfff {
+  background-color: #fff;
+}
+
+.padd24 {
+  padding-left: 0.32rem;
+  padding-right: 0.32rem;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.mtop28 {
+  margin-top: 0.373333rem;
+}
+
+.padd26 {
+  padding-left: 0.346667rem;
+  padding-right: 0.346667rem;
+}
+
+.mtop26 {
+  margin-top: 0.346667rem;
+}
+
+.ptop26 {
+  padding-top: 0.346667rem;
+}
+
+.radius4 {
+  border-radius: 0.053333rem;
+}

@@ -1,0 +1,153 @@
+[data-dpr='2'] .header .head-left {
+  background-image: url("../images/back@2x.png");
+  background-size: 100% 100%;
+}
+
+[data-dpr='3'] .header .head-left {
+  background-image: url("../images/back@3x.png");
+  background-size: 100% 100%;
+}
+
+.main {
+  background-color: #f0f1f5;
+}
+
+.yue {
+  height: 1.36rem;
+  line-height: 1.36rem;
+  color: #666;
+  font-weight: bold;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+[data-dpr="1"] .yue {
+  font-size: 16px;
+}
+
+[data-dpr="2"] .yue {
+  font-size: 32px;
+}
+
+[data-dpr="3"] .yue {
+  font-size: 48px;
+}
+
+.yue span {
+  color: #b61b1b;
+  margin-left: 0.693333rem;
+}
+
+.cz-address {
+  padding: 0.4rem 0.32rem 0.64rem 0.32rem;
+}
+
+.cz-address p:nth-of-type(1) {
+  color: #666;
+  font-weight: bold;
+}
+
+[data-dpr="1"] .cz-address p:nth-of-type(1) {
+  font-size: 16px;
+}
+
+[data-dpr="2"] .cz-address p:nth-of-type(1) {
+  font-size: 32px;
+}
+
+[data-dpr="3"] .cz-address p:nth-of-type(1) {
+  font-size: 48px;
+}
+
+.cz-address>div {
+  margin-top: 0.186667rem;
+}
+
+#address {
+  width: 8rem;
+  border: none;
+  background: transparent;
+  color: #999999;
+}
+
+.copy {
+  width: 1.133333rem;
+  height: 0.533333rem;
+  border-radius: 0.533333rem;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 0.533333rem;
+  background-color: transparent;
+  font-size: 0.293333rem;
+}
+
+.tips {
+  padding-top: 0.613333rem;
+  padding-bottom: 0.706667rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.tips-title {
+  color: #666;
+}
+
+[data-dpr="1"] .tips-title {
+  font-size: 12px;
+}
+
+[data-dpr="2"] .tips-title {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .tips-title {
+  font-size: 36px;
+}
+
+.tips-con p {
+  color: #999;
+  line-height: 0.48rem;
+}
+
+[data-dpr="1"] .tips-con p {
+  font-size: 11px;
+}
+
+[data-dpr="2"] .tips-con p {
+  font-size: 22px;
+}
+
+[data-dpr="3"] .tips-con p {
+  font-size: 33px;
+}
+
+.tips-con p:nth-of-type(1) {
+  margin-top: 0.213333rem;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0.853333rem;
+}
+
+footer div {
+  text-align: center;
+  color: #999;
+}
+
+[data-dpr="1"] footer div {
+  font-size: 12px;
+}
+
+[data-dpr="2"] footer div {
+  font-size: 24px;
+}
+
+[data-dpr="3"] footer div {
+  font-size: 36px;
+}
+
+footer img {
+  width: 0.72rem;
+  height: 0.72rem;
+  vertical-align: middle;
+}

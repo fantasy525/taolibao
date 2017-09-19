@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <script src="js/lib/flexible.js"></script>
+  <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+  <link rel="stylesheet" href="css/jquery-weui.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/loadmore.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <div id="loadmore">
+
+    <div id="scroller">
+      <div id="pullDown">
+        <div class="weui-pull-to-refresh__layer">
+          <div class="weui-pull-to-refresh__arrow"></div>
+          <div class="weui-pull-to-refresh__preloader"></div>
+
+          <span class="pullDownLabel">上拉加载更多</span>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header-top flex flex-justify-around">
+          <a href="javascript:;" class="setup"></a>
+          <h1 class="title"></h1>
+          <a href="person.html" class="person"></a>
+        </div>
+        <div>
+          <div class="banner-wrap">
+            <a href="miji.html"><img src="images/index/banner.png" alt=""></a>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div class="list-top flex flex-justify-between">
+          <span>当前还可监听8组</span><span><i class="iconfont">&#xe608;</i> 所有盈利率均已扣除交易手续费</span>
+        </div>
+        <ul class="lists" style="">
+          <a href="">
+            <li class="lists-item backfff ">
+              <div class="item-top clearfix">
+                <div class="item-top-left fl">
+                  <b class="b-huobi">火币网</b>
+                  <span class="btc">BTC</span>
+                  <span class="cny">CNY</span>
+                </div>
+                <div class="item-top-right fr">
+                  <span class="yl">月盈利率 30%</span>
+                </div>
+              </div>
+              <div class="item-con flex">
+                <div class="buy">
+                  <p class="title">买入建议</p>
+                  <p class="item-num"><span class="fh-checking">检测中</span> </p>
+                  <p class="item-time">08/04 14:16:20</p>
+                </div>
+                <div class="sell">
+                  <p class="title">买入建议</p>
+                  <p class="item-num"><span class="fh">17400.65</span> </p>
+                  <p class="item-time">08/04 14:16:20</p>
+                </div>
+                <div class="rate">
+                  <p class="title">盈利率</p>
+                  <p class="item-num fh-checking">检测中</p>
+                </div>
+              </div>
+            </li>
+          </a>
+          <a href="">
+            <li class="lists-item backfff mtop26 ">
+              <div class="item-top clearfix">
+                <div class="item-top-left fl">
+                  <b class="b-huobi">火币网</b>
+                  <span class="btc">BTC</span>
+                  <span class="cny">CNY</span>
+                </div>
+                <div class="item-top-right fr">
+                  <span class="sl">胜率 85%</span>
+                  <span class="yl">盈利率 30%</span>
+                </div>
+              </div>
+              <div class="item-con flex">
+                <div class="buy">
+                  <p class="title">买入建议</p>
+                  <p class="item-num"><span class="fh">17400.65</span> </p>
+                  <p class="item-time">08/04 14:16:20</p>
+                </div>
+                <div class="sell">
+                  <p class="title">买入建议</p>
+                  <p class="item-num"><span class="fh">17400.65</span> </p>
+                  <p class="item-time">08/04 14:16:20</p>
+                </div>
+                <div class="rate">
+                  <p class="title">盈利率</p>
+                  <p class="item-num">3.8%</p>
+                  <p class="item-time">24H万元收益 xxx 元</p>
+                </div>
+              </div>
+            </li>
+          </a>
+          <a href="">
+            <li class="lists-item backfff mtop26 ">
+              <div class="item-top clearfix">
+                <div class="item-top-left fl">
+                  <b class="b-huobi">火币网</b>
+                  <span class="btc">BTC</span>
+                  <span class="cny">CNY</span>
+                </div>
+                <div class="item-top-right fr">
+                  <span class="sl">胜率85%</span>
+                  <span class="yl">盈利率30%</span>
+                </div>
+              </div>
+              <div class="item-con flex">
+                <div class="buy">
+                  <p class="title">买入建议</p>
+                  <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                  <p class="item-time">08/04 14:16:20</p>
+                </div>
+                <div class="sell">
+                  <p class="title">买入建议</p>
+                  <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                  <p class="item-time">08/04 14:16:20</p>
+                </div>
+                <div class="rate">
+                  <p class="title">盈利率</p>
+                  <p class="item-num">3.8%</p>
+                </div>
+              </div>
+            </li>
+          </a>
+        </ul>
+
+      </div>
+
+    </div>
+    <div class="bottom">
+    </div>
+    <div class="list_empty" style="text-align: center;display:none;">
+      <p>在监听设置里添加你的数字货币资产</p>
+      <img src="./images/empty.png" alt="">
+    </div>
+  </div>
+  <div class="bottomBar" style="display:block">
+    <span>2017/09/27 到期</span><a href="">立即续费</a>
+  </div>
+  <div class="alert-tips">再按一次退出</div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+  <script src="js/lib/iscroll.js">
+  </script>
+  <script src="js/common/index_refresh.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    // console.log(window.history);
+    var first = true;
+    var timer = null;
+    console.log(first);
+    window.history.pushState(null, null, '#');
+    $('.alert-tips').on('webkitAnimationEnd', function() {
+      if ($(this).hasClass('alert-tips-hide')) {
+        $(this).removeClass('alert-tips-show')
+      }
+    })
+    window.addEventListener('load', function() {
+
+      setTimeout(function() {
+        window.addEventListener('popstate', function() {
+          if (first) {
+            $('.alert-tips').addClass('alert-tips-show').removeClass('alert-tips-hide');
+            first = false;
+            window.history.pushState(null, null, '#');
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+              $('.alert-tips').addClass('alert-tips-hide');
+              first = true;
+            }, 2000)
+          } else {
+            window.location.href = "load.html"
+          }
+        })
+      }, 0)
+    })
+    $('.setup').click(function() {
+        window.location.href = 'http://localhost:3000/h5/taolibao/src/lis_setup.html'
+      })
+      // $.modal({
+      //   title: '发送失败',
+      //   buttons: [{
+      //     text: "取消",
+      //     className: "",
+      //     onClick: function() {}
+      //   }, {
+      //     text: "续费",
+      //     className: "",
+      //     onClick: function() {}
+      //   }]
+      // });
+  </script>
+</body>
+
+</html>

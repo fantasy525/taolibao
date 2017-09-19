@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <script src="js/lib/flexible.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/loadmore.css">
+</head>
+<body>
+<header class="header flex flex-align">
+    <a href="" class="head-left"></a>
+    <h1 class="head-title">
+        OKCoin
+    </h1>
+</header>
+<div id="loadmore">
+    <div id="scroller">
+        <div class="pri-rate padd24">
+            <p class="pri-tips">当前价格</p>
+            <p class="price">
+                ￥37612.07
+            </p>
+            <div class="check-box flex flex-justify-between">
+                <div class="check-box-left">
+                    <p>近一月胜率</p>
+                    <div class="check-rate">
+                        <i class="check-icons"></i>3.8%
+                    </div>
+                </div>
+                <div class="check-box-right">
+                    <p>近一月盈利</p>
+                    <div class="check-rate">
+                        <i class="check-icons"></i>3.8%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="records padd24">
+            <p class="records-title">
+                监测记录<span>BTC</span><span>CNY</span>
+            </p>
+            <ul class="lists">
+
+                <li class="lists-item ">
+                    <div class="item-con flex">
+                        <div class="buy">
+                            <p class="title">买入建议</p>
+                            <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                            <p class="item-time">08/04 14:16:20</p>
+                        </div>
+                        <div class="sell">
+                            <p class="title">买入建议</p>
+                            <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                            <p class="item-time">08/04 14:16:20</p>
+                        </div>
+                        <div class="rate">
+                            <p class="title">盈利率</p>
+                            <p class="item-num">3.8%</p>
+                        </div>
+                    </div>
+                </li>
+
+                    <li class="lists-item mtop28">
+                        <div class="item-con flex">
+                            <div class="buy">
+                                <p class="title">买入建议</p>
+                                <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                                <p class="item-time">08/04 14:16:20</p>
+                            </div>
+                            <div class="sell">
+                                <p class="title">买入建议</p>
+                                <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                                <p class="item-time">08/04 14:16:20</p>
+                            </div>
+                            <div class="rate">
+                                <p class="title">盈利率</p>
+                                <p class="item-num">3.8%</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lists-item mtop28">
+                        <div class="item-con flex">
+                            <div class="buy">
+                                <p class="title">买入建议</p>
+                                <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                                <p class="item-time">08/04 14:16:20</p>
+                            </div>
+                            <div class="sell">
+                                <p class="title">买入建议</p>
+                                <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                                <p class="item-time">08/04 14:16:20</p>
+                            </div>
+                            <div class="rate">
+                                <p class="title">盈利率</p>
+                                <p class="item-num">3.8%</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lists-item mtop28">
+                        <div class="item-con flex">
+                            <div class="buy">
+                                <p class="title">买入建议</p>
+                                <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                                <p class="item-time">08/04 14:16:20</p>
+                            </div>
+                            <div class="sell">
+                                <p class="title">买入建议</p>
+                                <p class="item-num">￥<span class="fh">17400.65</span> </p>
+                                <p class="item-time">08/04 14:16:20</p>
+                            </div>
+                            <div class="rate">
+                                <p class="title">盈利率</p>
+                                <p class="item-num">3.8%</p>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+        <div id="pullUp">
+            <div class="weui-pull-to-refresh__layer">
+                <div class="weui-pull-to-refresh__preloader"></div>
+                <span class="pullUpLabel">上拉加载更多</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/lib/iscroll.js"></script>
+<script src="js/common/pulldown.js"></script>
+<script>
+    var t1=$('.header')[0].offsetHeight;
+
+    $('#loadmore')[0].style.top=t1+'px';
+</script>
+</body>
+</html>

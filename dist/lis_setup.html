@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监听设置</title>
+    <script src="js/lib/flexible.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lissetup.css">
+</head>
+<body>
+<header class="header flex flex-align">
+    <a href="" class="head-left"></a>
+    <h1 class="head-title">
+        监听设置
+    </h1>
+</header>
+<div class="main">
+    <ul class="lists padd26 ptop26">
+        <li class="flex backfff item">
+            <div class="cell">
+                <p class="cell-name b-huobi">火币网</p>
+                <p><span class="money-flag btc">BTC</span><span class="money-flag cny">CNY</span></p>
+            </div>
+            <div class="cell rate">
+                <p>近一月胜率</p>
+                <p>
+                    <b>7.00%</b>
+                </p>
+            </div>
+            <div class="cell rate">
+                <p>近一月盈利率</p>
+                <p>
+                    <b>7.00%</b>
+                </p>
+            </div>
+            <div class="cell-btn vertical-mid">
+                <input type="button" value="+监听" class="listen radius4">
+            </div>
+        </li>
+        <li class="flex backfff item mtop26 ">
+            <div class="cell">
+                <p class="cell-name b-okcion">OKCoin</p>
+                <p><span class="money-flag btc">BTC</span><span class="money-flag cny">CNY</span></p>
+            </div>
+            <div class="cell rate">
+                <p>近一月胜率</p>
+                <p>
+                    <b>7.00%</b>
+                </p>
+            </div>
+            <div class="cell rate">
+                <p>近一月盈利率</p>
+                <p>
+                    <b>7.00%</b>
+                </p>
+            </div>
+            <div class="cell-btn vertical-mid">
+                <input type="button" value="已监听" class="listen radius4 has-listen">
+            </div>
+        </li>
+        <li class="flex backfff item mtop26 ">
+            <div class="cell">
+                <p class="cell-name b-okcion">OKCoin</p>
+                <p><span class="money-flag btc">BTC</span><span class="money-flag cny">CNY</span></p>
+            </div>
+            <div class="cell rate">
+                <p>近一月胜率</p>
+                <p>
+                    <b>7.00%</b>
+                </p>
+            </div>
+            <div class="cell rate">
+                <p>近一月盈利率</p>
+                <p>
+                    <b>7.00%</b>
+                </p>
+            </div>
+            <div class="cell-btn vertical-mid">
+                <input type="button" value="已监听" class="listen radius4 has-listen">
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+<script>
+    //会员过期
+    $('.listen').click(function(){
+        $.modal({
+            title: '会员过期了',
+            text: '您会员服务到期了，赶紧续费！',
+            buttons: [
+                { text: "取消", className:"",onClick: function(){} },
+                { text: "立即认购", className: "", onClick: function(){} },
+            ]
+        });
+    })
+</script>
+</body>
+</html>

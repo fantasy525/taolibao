@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>充值中心</title>
+  <script src="./js/lib/flexible.js"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/recharge.css">
+</head>
+
+<body>
+  <header class="header flex flex-align">
+    <a href="" class="head-left"></a>
+    <h1 class="head-title">
+      充值中心
+    </h1>
+  </header>
+  <div class="main padd26 ptop26">
+    <div class="balance radius4">
+      <h2 class="bal-title">账户余额</h2>
+      <p class="bal-value"></p>
+      <p class="bal-title">ETH充值地址</p>
+      <div class="charge-url padd26 clearfix">
+        <input type="text" id="url" value="www.simss.com"><input type="button" class="copy fr" data-clipboard-target="#url" value="复制">
+      </div>
+    </div>
+    <div class="mtop28 msg backfff">
+      <div class="msg-item radius4">
+        <p class="msg-title">充值方法</p>
+        <div class="msg-detail">
+          <p>1.规定发给个地方防守打法第三方都是</p>
+          <p>2.再次登录客户端，核对账号密码记忆订单</p>
+          <p>3.输入要充值的金额，请选择争取</p>
+          <p>4.成功充值后请查看订单，如果没有到账请等待</p>
+        </div>
+      </div>
+      <div class="msg-item radius4">
+        <p class="msg-title">充值方法</p>
+        <div class="msg-detail">
+          <p>1.先登录客户单账号，新用户请注册</p>
+          <p>2.再次登录客户端，核对账号密码记忆订单</p>
+          <p>3.输入要充值的金额，请选择争取</p>
+          <p>4.成功充值后请查看订单，如果没有到账请等待</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact backfff mtop28 radius4 clearfix">
+      <a href=""><span>充值了未到账？请通过公众号联系我们</span> <i class="next-btn fr"></i><img src="images/weixin.png" class="weixin fr"></a>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+  <script>
+    new Clipboard('.copy');
+    var balance = '10.8312'.split('.');
+    var integer = balance[0];
+    var decimal = balance[1];
+    var balValue = '<span>' + integer + '</span>.<span class="bal-val__decimal">' + decimal + '</span> <span class="bal-val__unit">ETH</span>';
+    document.querySelector('.bal-value').innerHTML = balValue;
+  </script>
+</body>
+
+</html>

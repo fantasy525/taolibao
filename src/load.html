@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class=" js-no-overflow-scrolling">
+
+<head>
+  <meta charset="utf-8">
+  <title>引导页</title>
+  <script src="js/lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/h5_full_page.css">
+  <link rel="stylesheet" type="text/css" href="css/page-animation.css">
+  <link rel="stylesheet" href="css/loading.css">
+</head>
+
+<body class="H5FullscreenPage">
+  <div class="H5FullscreenPage-wrap">
+    <div class="item item1">
+      <div class="con-wrap">
+        <div class="item1-top">
+          <img src="images/load/title.png" alt="">
+        </div>
+        <div class="img-wrap img-subtitle"></div>
+        <div class="img-wrap mid-img1"> </div>
+        <div class="img-wrap mid-img2"></div>
+        <div class="img-wrap mid-img3"></div>
+      </div>
+      <div class="earth"></div>
+    </div>
+    <div class="item item2">
+      <div id="wrapper">
+        <ul id="scroller">
+          <li class="li-wrap">
+            <h2 class="bz-title">选择监听交易所</h2>
+            <div class="con">
+              <div class="con-item flex flex-wrap flex-justify-between">
+                <div class="jsy " id="huobi">
+                  <div class="jsy-item-wrap vertical-mid">
+                    <img src="images/huobi.png" alt="">
+                  </div>
+                  <p>火币网</p>
+                </div>
+                <div class="jsy" id="okcoin">
+                  <div class="jsy-item-wrap vertical-mid">
+                    <img src="images/okcion.png" alt="">
+                  </div>
+                  <p>OKCOIN币行</p>
+                </div>
+                <div class="jsy jsy-selected" id="jubi">
+                  <div class="jsy-item-wrap vertical-mid">
+                    <img src="images/jubi.png" alt="">
+                  </div>
+                  <p>聚币网</p>
+                </div>
+                <div class="jsy" id="bite">
+                  <div class="jsy-item-wrap vertical-mid">
+                    <img src="images/bite.png" alt="">
+                  </div>
+                  <p>比特币交易网</p>
+                </div>
+              </div>
+            </div>
+            <div class="bz">
+              <h2 class="bz-title">选择监听币种</h2>
+              <div class="con-item flex flex-wrap flex-justify-between">
+                <div class="bz-wrap bz-selected" id="btc">
+                  <div class="bz-item-wrap vertical-mid">
+                    <img src="images/BTC.png" alt="">
+                  </div>
+                  <p>BTC</p>
+                </div>
+                <div class="bz-wrap " id="ltc">
+                  <div class="bz-item-wrap vertical-mid">
+                    <img src="images/LTC.png" alt="">
+                  </div>
+                  <p>LTC</p>
+                </div>
+                <div class="bz-wrap " id="eth">
+                  <div class="bz-item-wrap vertical-mid">
+                    <img src="images/ETH.png" alt="">
+                  </div>
+                  <p>ETH</p>
+                </div>
+                <div class="bz-wrap " id="etc">
+                  <div class="bz-item-wrap vertical-mid">
+                    <img src="images/ETC.png" alt="">
+                  </div>
+                  <p>ETC</p>
+                </div>
+              </div>
+            </div>
+            <p class="shiyong">
+              免费试用7天
+            </p>
+            <div class="btn">
+              <input type="button" class="listen">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="mask"></div>
+  <div class="mask-con">
+    <img src="images/load2/alert_03.png" alt="">
+  </div>
+  <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+  <script type="text/javascript" src="js/h5_full_page.js"></script>
+  <script src="js/lib/iscroll.js"></script>
+  <script src="js/load.js"></script>
+  <script type="text/javascript">
+    H5FullscreenPage.init({
+      'type': 3,
+      'useArrow': true,
+      'pageShow': function(dom) {
+
+      },
+      'pageHide': function(dom) {
+        //console.log(dom);
+      },
+      'useMusic': false
+    });
+    H5FullscreenPage.next();
+    window.onload = function() {
+      setTimeout(function() {
+        var myScroll = new iScroll('wrapper', {
+          scrollbars: false,
+          btnOffset: '95px',
+          useTransition: true,
+          bounce: false,
+          onScrollMove: function(e) {
+            e.stopPropagation();
+          }
+        });
+        myScroll.refresh();
+      }, 100)
+    }
+  </script>
+</body>
+
+</html>

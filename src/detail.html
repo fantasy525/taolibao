@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>详情页</title>
+  <script src="js/lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="css/loadmore.css">
+</head>
+
+<body>
+  <header class="header flex flex-align">
+    <a href="" class="head-left"></a>
+    <h1 class="head-title">
+      OKCoin
+    </h1>
+  </header>
+  <div id="loadmore">
+    <div id="scroller">
+      <div id="pullDown">
+        <div class="weui-pull-to-refresh__layer">
+          <div class="weui-pull-to-refresh__arrow"></div>
+          <div class="weui-pull-to-refresh__preloader"></div>
+
+          <span class="pullDownLabel">上拉加载更多</span>
+        </div>
+      </div>
+      <div class="pri-rate padd24">
+        <p class="pri-tips">当前价格</p>
+        <p class="price">
+          <span>￥37612.07</span><i class="pri-arrow iconfont">&#xe608;</i>
+        </p>
+        <div class="check-box flex flex-justify-between">
+          <div class="check-box-left">
+            <p>近一月胜率</p>
+            <div class="check-rate">
+              13.28%
+            </div>
+          </div>
+          <div class="check-box-right">
+            <p>近一月盈利</p>
+            <div class="check-rate">
+              13.28%
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="records padd24">
+        <p class="records-title clearfix">
+          监测记录 <i class="iconfont faq ">&#xe608;</i><span class="item-time fr">24H万元收益 <b>000</b> 元</span>
+        </p>
+        <div class="alert-tips">盈利率计算已扣除交易所手续费</div>
+        <ul class="lists" id="lists">
+          <script type="text/html" id="jsHtml">
+            <@ for (var i=0;i< lists.length; i++){@>
+              <li class="lists-item <@= i==0?'':'mtop28'@>">
+                <div class="item-con flex">
+                  <div class="buy">
+                    <p class="title">买入建议</p>
+                    <p class="item-num">￥<span class="fh <@= lists[i].buyPrice?'':'fh-checking'@>"><@=lists[i].buyPrice?lists[i].buyPrice:'检测中'
+                                       @></span> </p>
+                    <p class="item-time">
+                      <@=lists[i].buyTime @>
+                    </p>
+                  </div>
+                  <div class="sell">
+                    <p class="title">卖出建议</p>
+                    <p class="item-num">￥<span class="fh <@= lists[i].sellPrice?'':'fh-checking'@>"><@=lists[i]. sellPrice
+                                       @></span> </p>
+                    <p class="item-time">
+                      <@=lists[i].sellTime @>
+                    </p>
+                  </div>
+                  <div class="rate">
+                    <p class="title">本次盈利</p>
+                    <p class="item-num <@= lists[i].dayGain?'':'fh-checking'@>">
+                      <@=lists[i].dayGain?lists[i].dayGain+ '%': '检测中' @>
+                    </p>
+
+                  </div>
+                </div>
+              </li>
+              <@ }@>
+          </script>
+
+        </ul>
+      </div>
+      <div id="pullUp">
+        <div class="weui-pull-to-refresh__layer">
+          <div class="weui-pull-to-refresh__preloader"></div>
+          <span class="pullUpLabel">上拉加载更多</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/lib/iscroll.js"></script>
+  <script src="js/lib/template.js"></script>
+  <script src="js/common/pulldown.js"></script>
+  <script src="js/lib/webscoket.js">
+  </script>
+  <script>
+    var t1 = $('.header')[0].offsetHeight;
+    $('#loadmore')[0].style.top = t1 + 'px';
+    var listsData;
+    var data = {
+      lists: [{
+        buyTime: '02120',
+        sellPrice: 313,
+        sellTime: '222',
+        dayGain: '3.5'
+      }, {
+        buyPrice: 10,
+        buyTime: '010120',
+        sellPrice: 100,
+        sellTime: '333'
+      }]
+    }
+    var listHtml = template('jsHtml', data);
+    document.getElementById('lists').innerHTML = listHtml;
+    var socket = new MySocket('10.23.2.54/coinTradeDetailWebSocket/1');
+    socket.open(function() {
+      console.log('webSocket连接成功')
+    });
+    socket.get(function(data) {
+      console.log(data);
+    })
+    $('.alert-tips').on('webkitAnimationEnd', function() {
+      if ($(this).hasClass('alert-tips-hide')) {
+        $(this).removeClass('alert-tips-show')
+      }
+    })
+    $('.faq').on('click', function() {
+      $('.alert-tips').addClass('alert-tips-show').removeClass('alert-tips-hide');
+      setTimeout(function() {
+        $('.alert-tips').addClass('alert-tips-hide');
+      }, 2000)
+    })
+  </script>
+</body>
+
+</html>

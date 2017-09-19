@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>个人中心</title>
+  <script src="js/lib/flexible.js"></script>
+  <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/person.css">
+</head>
+
+<body>
+  <header class="per-header ">
+    <div class="header-top flex ">
+      <a href="" class="head-left"></a>
+      <div class="avatar">
+        <img src="images/person/avatar.png" alt="">
+        <p>微信昵称</p>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <p class="clearfix"> <span>已监听5组</span><a href="" class="fr h-btn h-btn-active">设置</a></p>
+      <p class="clearfix">
+        <span>会员服务 2017/08/06 16:00 到期</span><a href="" class=" fr h-btn h-btn-active">续费</a>
+      </p>
+    </div>
+  </header>
+  <div class="main">
+    <div class="balance flex backfff flex-justify-between padd24">
+      <div class="bal-item">
+        <p>ETH账户余额</p>
+        <p><b id="ethBalance"><span>0</span>.<span class="bal-val__decimal">00</span></b></p>
+        <p><a href="recharge.html">充值&gt;&gt;</a></p>
+      </div>
+      <div class="bal-item">
+        <p>ETH账户余额</p>
+        <p><b>----</b></p>
+        <p><a href="">即将开通</a></p>
+      </div>
+    </div>
+    <div class="switch mtop20 padd24 backfff">
+      <div class="switch-item padd">
+        <i class="switch-icon night"></i>夜间模式<span class="switch-desc">开启后 23:00 至次日凌晨不推送消息</span><input class="weui-switch" data-index="0" type="checkbox">
+      </div>
+      <div class="switch-item padd">
+        <i class="switch-icon mess"></i>短信推送<span class="switch-desc">关闭后将不再收到短信推送消息</span><input class="weui-switch" data-index="1" type="checkbox">
+      </div>
+      <div class="switch-item padd">
+        <i class="switch-icon weixin-icon"></i>微信推送<span class="switch-desc">开启后XXXXXX</span><input class="weui-switch" data-index="2" type="checkbox">
+      </div>
+    </div>
+    <div class="contact backfff mtop28 radius4 clearfix">
+      <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU0MDE1MjYyMw==&scene=124#wechat_redirect">充值了未到账？请通过公众号联系我们<img src="images/weixin.png" class="weixin"><i class="next-btn fr"></i></a>
+    </div>
+    <div class="code-wrap mtop28 ">
+      <img src="images/person/code.png" alt="">
+      <p>如需了解更多，请联系我们</p>
+    </div>
+  </div>
+  <footer class="footer vertical-mid">
+    <img src="images/person/footer.png" alt=""><span>出品</span>
+  </footer>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $('.weui-switch').on('click', function(event) {
+      event.preventDefault();
+      var _this = $(this);
+      console.log(_this.data('index'))
+      var status = _this.prop("checked") ? 0 : 1;
+      console.log(_this.get(0).checked)
+      console.log(status)
+      var url;
+      switch (_this.data('index')) {
+        case 0:
+          url = '/tlb/my/night'
+          break;
+        case 1:
+          url = '/tlb/my/smspush'
+          break;
+        case 2:
+          url = '/tlb/my/wxpush'
+          break;
+        default:
+          break;
+      }
+      setTimeout(function() {
+        console.log(url);
+        _this.prop("checked", !_this.prop("checked"))
+        console.log('now', _this.prop("checked"))
+      }, 1000)
+
+    })
+    setTimeout(function() {
+      var balance = "0.8314".split('.');
+      var decimal = balance[1];
+      var integer = balance[0];
+      var balHtml = '<span>' + integer + '</span>.<span class="bal-val__decimal">' + decimal + '</span>';
+      document.querySelector('#ethBalance').innerHTML = balHtml;
+    }, 2000)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+html {
+  background-color: #1d082d;
+}
+
+.header {
+  height: 334px;
+}
+
+.header a {
+  width: 100%;
+  display: inline-block;
+}
+
+.header img {
+  width: 100%;
+  height: 250px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  vertical-align: bottom;
+}
+
+.header .slick-dots {
+  bottom: 14px;
+}
+
+.header .slick-dots li {
+  width: 20px;
+  height: 20px;
+}
+
+.header .slick-dots li button:before {
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  content: '';
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #2e1836;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.header-top {
+  width: 94%;
+  background-color: #1d082d;
+  padding: 20px 23px;
+}
+
+.header .title {
+  margin: 0 auto;
+  width: 226px;
+  height: 50px;
+  background: url("../images/index/title.png") center center no-repeat;
+  -webkit-background-size: 93% 93%;
+  background-size: 93% 93%;
+}
+
+.header-top .setup {
+  width: 40px;
+  height: 35px;
+  background: url("../images/index/setup.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.header-top .person {
+  position: relative;
+  width: 40px;
+  height: 45px;
+  background: url("../images/index/person.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.header-top .person:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 159%;
+  height: 150%;
+  top: -21%;
+  left: -30%;
+}
+
+.header {
+  padding-left: 0px;
+}
+
+.main {
+  background-color: #1d082d;
+  padding: 20px 23px 48px 23px;
+}
+
+.banner-wrap {
+  padding: 0 23px;
+}
+
+.lists-item {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 30px 30px 55px 30px;
+}
+
+.item-top-left,
+.item-top-right {
+  height: 75px;
+  line-height: 75px;
+}
+
+.item-top-left b {
+  font-size: 28px;
+  /*px*/
+  color: #1d082d;
+  vertical-align: middle;
+}
+
+.item-top-left span {
+  display: inline-block;
+  width: 49px;
+  height: 25px;
+  text-align: center;
+  line-height: 26px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  font-size: 16px;
+  /*px*/
+  vertical-align: middle;
+  color: #6d698e;
+}
+
+.item-top-left span:nth-of-type(1) {
+  border: 1px solid #6d698e;
+  /*no*/
+}
+
+.item-top-left span:nth-of-type(2) {
+  border: 1px solid #6d698e;
+  /*no*/
+}
+
+.item-top-right {
+  font-size: 20px;
+  /*px*/
+  color: #6d698e;
+  margin-top: -24px;
+}
+
+.btc {
+  margin-left: 20px;
+}
+
+.yl {
+  font-size: 26px;
+  /*px*/
+  color: #ff766f;
+  margin-left: 21px;
+}
+
+.title {
+  font-size: 20px;
+  /*px*/
+  font-weight: 600;
+  color: #7c83a1;
+}
+
+.buy .title {
+  color: #ff766f;
+}
+
+.item-num {
+  font-size: 27px;
+  /*px*/
+  color: #9399bd;
+  height: 96px;
+  line-height: 96px;
+  margin-left: -6px;
+}
+
+.item-num .fh {
+  font-size: 44px;
+  /*px*/
+  color: #ff766f;
+  vertical-align: sub;
+}
+
+.item-num .fh-checking {
+  font-size: 44px;
+  /*px*/
+  vertical-align: sub;
+  color: #9399bd;
+}
+
+.item-time {
+  font-size: 20px;
+  /*px*/
+  color: #9399bd;
+}
+
+.sell .title {
+  color: #7c83a1
+}
+
+.sell .fh {
+  color: #0cac6a;
+}
+
+.sell,
+.buy {
+  flex: 7 1;
+  -webkit-flex: 7 1;
+}
+
+.rate {
+  width: 202px;
+  border-left: 1px solid #d4d6e5;
+  /*no*/
+}
+
+.rate .title {
+  text-align: center;
+  margin-left: 30px;
+}
+
+.rate .item-num {
+  font-size: 62px;
+  /*px*/
+  color: #ff766f;
+  text-align: right;
+  margin-left: 0;
+}
+
+.rate .item-time {
+  text-align: right;
+}
+
+.rate .fh-checking {
+  text-align: center;
+  font-size: 44px;
+  /*px*/
+  vertical-align: sub;
+  color: #9399bd;
+}
+
+.rate .fh-green {
+  color: #0cac6a;
+}
+
+.rate .zero {
+  color: #bbbfd4;
+}
+
+.border-b {
+  border-bottom: 1px solid #e8e8e8;
+  /*no*/
+}
+
+.item-top-left .b-jubi {
+  color: #E75600;
+}
+
+.item-top-left .b-okcoin {
+  color: #059CDF;
+}
+
+.item-top-left .b-huobi {
+  color: #ff6000;
+}
+
+.item-top-left .b-btctrade {
+  color: #aa5800;
+}
+
+.list_empty {
+  width: 522px;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 20;
+  text-align: center;
+  margin-top: 300px;
+  background-color: #1d082d;
+}
+
+.list_empty p {
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+  font-size: 24px;
+  /*px*/
+}
+
+.list_empty img {
+  width: 300px;
+}
+
+.bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #1d082d;
+}
+
+body {
+  background-color: #1d082d;
+}
+
+#pullDown {
+  color: #fff;
+}
+
+#scroller {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  background-color: #1d082d;
+}
+
+.bottomBar {
+  position: fixed;
+  z-index: 101;
+  width: 94%;
+  margin-left: 23px;
+  bottom: 0;
+  background-color: #fff;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #bbbfd4;
+  /*no*/
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+[data-dpr="1"] .bottomBar {
+  width: 9.44rem;
+}
+
+.bottomBar span {
+  font-size: 30px;
+  /*px*/
+  color: #9399bd;
+  vertical-align: middle;
+}
+
+.bottomBar a {
+  display: inline-block;
+  width: 163px;
+  height: 51px;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 51px;
+  color: #9399bd;
+  font-size: 30px;
+  /*px*/
+  margin-left: 93px;
+  margin-bottom: 6px;
+}
+
+.weui-dialog__hd {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.weiui-dialog {
+  display: flex;
+  display: -webkit-flex;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 385607 */
+  src: url('//at.alicdn.com/t/font_385607_te0uoks47jkprpb9.eot');
+  src: url('//at.alicdn.com/t/font_385607_te0uoks47jkprpb9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_385607_te0uoks47jkprpb9.woff') format('woff'), url('//at.alicdn.com/t/font_385607_te0uoks47jkprpb9.ttf') format('truetype'), url('//at.alicdn.com/t/font_385607_te0uoks47jkprpb9.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  /*px*/
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.002667rem;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.list-top {
+  color: #fff;
+  font-size: 16px;
+  /*px*/
+  height: 60px;
+  line-height: 46px;
+  padding: 0 23px;
+}
+
+.rate {
+  flex: 1 1 184px;
+  -webkit-flex: 1 1 184px;
+}

@@ -1,0 +1,290 @@
+body {
+  width: 100%;
+}
+
+[data-dpr="1"] html,
+body {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+body {
+  background-color: #dee0eb;
+}
+
+html {
+  height: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-justify {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-justify-between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex-justify-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex-justify-right {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-align {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.flex-align-content {
+  -webkit-align-content: space-between;
+  align-content: space-between;
+}
+
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.vertical-middle:after {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.header {
+  height: 110px;
+  padding-left: 28px;
+}
+
+.header a {
+  display: inline-block;
+}
+
+.header .head-title {
+  flex: 1 1;
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  padding-right: 69px;
+}
+
+.header .person {
+  width: 36px;
+  height: 40px;
+}
+
+.backfff {
+  background-color: #fff;
+}
+
+.padd24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.mtop28 {
+  margin-top: 28px;
+}
+
+.padd26 {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.mtop26 {
+  margin-top: 26px;
+}
+
+.ptop26 {
+  padding-top: 26px;
+}
+
+.pbottom100 {
+  padding-bottom: 100px;
+}
+
+.radius4 {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.weui-dialog {
+  background-color: #362c67;
+  max-width: 540px;
+  -webkit-border-radius: 23px;
+  border-radius: 23px;
+}
+
+.weui-dialog,
+.weui-toast {
+  width: 506px;
+}
+
+.weui-dialog__title {
+  font-weight: 400;
+  font-size: 34px;
+  /*px;*/
+  color: #fff;
+}
+
+.weui-dialog__bd {
+  margin-top: 20px;
+  padding: 0 1.6em .8em;
+  min-height: 40px;
+  font-size: 26px;
+  /*px*/
+  line-height: 36px;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #6d698e;
+  text-align: center;
+}
+
+.weui-dialog__bd span {
+  color: #fff;
+}
+
+.weui-dialog__ft {
+  font-size: 24px;
+  /*px*/
+  color: #666;
+  height: 70px;
+  line-height: 70px;
+}
+
+.weui-dialog__hd {
+  padding-top: 50px;
+}
+
+.weui-dialog__ft a {
+  height: 100%;
+}
+
+.weui-dialog__ft a:nth-of-type(1) {
+  color: #fff;
+}
+
+.weui-dialog__ft a:nth-of-type(2) {
+  color: #fcd014;
+}
+
+.weui-dialog__btn:active {
+  background-color: transparent;
+}
+
+body .weui-dialog {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-flex: columns;
+  -webkit-flex-direction: column;
+  justify-content: center;
+}
+
+.alert-tips {
+  position: absolute;
+  display: none;
+  width: 300px;
+  height: 50px;
+  line-height: 49px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+  /*px*/
+  bottom: 50px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  z-index: 9999;
+}
+
+.alert-tips-show {
+  display: block;
+  animation: alert-show .2s linear;
+  -webkit-animation: alert-show .2s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.alert-tips-hide {
+  animation: alert-hide .2s linear;
+  -webkit-animation: alert-hide .2s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes alert-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes alert-hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes alert-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes alert-hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
